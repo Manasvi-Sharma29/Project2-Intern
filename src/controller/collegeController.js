@@ -115,8 +115,7 @@ const collegeDetails = async function(req,res){
         
         //using .doc method to display the details of college along with that of interns
         if(!interns.length){
-            data._doc["interns"] = interns
-
+            data._doc["interns"] = "No intern exist for this college"
         }else{ 
                 data._doc["interns"] = interns
             }
